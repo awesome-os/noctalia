@@ -25,3 +25,13 @@ GitHub Actions builds, tests, and publishes `noctalia-linux-x64.tar.zst` + `SHA2
 ## License & Attribution
 
 MIT License — see [`LICENSE`](./LICENSE). Hard-forked from `noctalia-dev/noctalia` (MIT).
+
+## Quick Install & Run (Windows / Linux / macOS)
+
+```sh
+# Download latest release assets (all platforms)
+gh release download -R awesome-os/noctalia --dir ./noctalia-release
+
+# Or clone source directly (all platforms)
+git clone https://github.com/awesome-os/noctalia.git && cd noctalia
+```
