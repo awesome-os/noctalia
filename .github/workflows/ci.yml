@@ -82,10 +82,10 @@ jobs:
           if [ -z "$TAG" ]; then
             TAG="${GITHUB_REF#refs/tags/}"
           fi
-          if gh release view "$TAG" >/dev/null 2>&1; then
-            gh release upload "$TAG" dist-release/noctalia-linux-x64.tar.zst dist-release/SHA256SUMS.txt --clobber
+          if gh release view "$TAG" -R "${{ github.repository }}" >/dev/null 2>&1; then
+            gh release upload "$TAG" -R "${{ github.repository }}" dist-release/noctalia-linux-x64.tar.zst dist-release/SHA256SUMS.txt --clobber
           else
-            gh release create "$TAG" dist-release/noctalia-linux-x64.tar.zst dist-release/SHA256SUMS.txt \
+            gh release create "$TAG" -R "${{ github.repository }}" dist-release/noctalia-linux-x64.tar.zst dist-release/SHA256SUMS.txt \
               --title "Awesome-OS Noctalia ${TAG}" \
               --notes "Native C++23 Wayland + OpenGL ES desktop shell (zero Qt/GTK) for Awesome-OS & T2Desktop."
           fi
