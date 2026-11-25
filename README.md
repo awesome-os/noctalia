@@ -29,9 +29,9 @@ MIT License — see [`LICENSE`](./LICENSE). Hard-forked from `noctalia-dev/nocta
 ## Quick Install & Run (Windows / Linux / macOS)
 
 ```sh
-# Download latest release assets (all platforms)
-gh release download -R awesome-os/noctalia --dir ./noctalia-release
+# Install / hydrate from v11 CAS via holo-pm
+holo-pm install repository://github.com/awesome-os/noctalia@main
 
-# Or clone source directly (all platforms)
-git clone https://github.com/awesome-os/noctalia.git && cd noctalia
+# Or project & run directly via holo-project (0-byte hardlink)
+holo-project "project://cpp/noctalia?from=repository://github.com/awesome-os/noctalia@main"
 ```
