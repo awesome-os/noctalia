@@ -1,0 +1,36 @@
+{
+  "schema": "holo-compiler-lockfile-v1",
+  "abiMagic": "0x33564742",
+  "casLayout": "v11",
+  "repo": "awesome-os/noctalia",
+  "targets": [
+    "linux-x64"
+  ],
+  "generatedAt": "2026-11-24T23:53:02.473Z",
+  "dependencies": [
+    {
+      "id": "awesome-os/noctalia/noctalia-linux-x64.tar.zst",
+      "kind": "object",
+      "version": "v0.1.0",
+      "target": "linux-x64",
+      "sha512": "c37825fea2bdd61ff4fbd77874037488ba8fbcdfb4744f0058350e5fa2a8748a7bbad1ce6f1768c61050144c6ae40c1b4dca1c85d9381ce1dae21cc5439bad44",
+      "size": 12182571,
+      "executable": false,
+      "blob": "v11/files/c3/c37825fea2bdd61ff4fbd77874037488ba8fbcdfb4744f0058350e5fa2a8748a7bbad1ce6f1768c61050144c6ae40c1b4dca1c85d9381ce1dae21cc5439bad44",
+      "url": "https://github.com/awesome-os/noctalia/releases/download/v0.1.0/noctalia-linux-x64.tar.zst",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/noctalia/SHA256SUMS.txt",
+      "kind": "object",
+      "version": "v0.1.0",
+      "target": "any",
+      "sha512": "0484ebc637f5479068121268ecd3cf4a66fc7a4e713db09415aa7db1c1a355e9f01daaa63a35077e56cac39315f7c4db6e4c762064c77f6033c42877be3a320f",
+      "size": 93,
+      "executable": false,
+      "blob": "v11/files/04/0484ebc637f5479068121268ecd3cf4a66fc7a4e713db09415aa7db1c1a355e9f01daaa63a35077e56cac39315f7c4db6e4c762064c77f6033c42877be3a320f",
+      "url": "https://github.com/awesome-os/noctalia/releases/download/v0.1.0/SHA256SUMS.txt",
+      "dependencies": []
+    }
+  ]
+}
