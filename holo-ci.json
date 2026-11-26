@@ -1,0 +1,16 @@
+{
+  "schema": "holo-ci.v1",
+  "name": "noctalia",
+  "kind": "app",
+  "tests": [
+    "node -e \"const fs=require('node:fs'); const l=JSON.parse(fs.readFileSync('holo-compiler-lockfile.json','utf8')); if(l.abiMagic!=='0x33564742'||!fs.existsSync('meson.build')||!fs.existsSync('VERSION')) process.exit(1)\""
+  ],
+  "docs": [
+    "README.md",
+    "ARCHITECTURE.md"
+  ],
+  "guards": {
+    "zeroGhost": true,
+    "zeroCasV1": true
+  }
+}
